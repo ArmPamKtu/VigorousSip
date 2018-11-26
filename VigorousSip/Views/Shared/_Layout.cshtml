@@ -17,28 +17,37 @@
         <link rel="stylesheet" href="~/css/site.min.css" asp-append-version="true" />
     </environment>
 </head>
+
 <body>
-    <nav class="navbar navbar-inverse navbar-fixed-top">
-        <div class="container">
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-                    <span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                <a asp-area="" asp-controller="Home" asp-action="Index" class="navbar-brand">VigorousSip</a>
-            </div>
-            <div class="navbar-collapse collapse">
-                <ul class="nav navbar-nav">
-                    <li><a asp-area="" asp-controller="Home" asp-action="Index" class="btn btn-danger">Home</a></li>
-                    <li><a asp-area="" asp-controller="Home" asp-action="About">About</a></li>
-                    <li><a asp-area="" asp-controller="Home" asp-action="Contact">Contact</a></li>
-                    <li><a asp-area="" asp-controller="Home" asp-action="Shop">Shop</a></li>
-                </ul>
-            </div>
-        </div>
+    <nav class="navbar navbar-fixed-top navbar-light bg-light">
+        <a class="navbar-brand " href="#">
+            <img src="~/images/mini-vector-logo-small.png" width="30" height="30" class="d-inline-block align-top" alt="">
+        </a>
     </nav>
+
+    <!--
+        <nav class="navbar navbar-inverse navbar-fixed-top ">
+            <div class="container ">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a asp-area="" asp-controller="Home" asp-action="Index" class="navbar-brand">VigorousSip</a>
+                </div>
+                <div class="navbar-collapse collapse">
+                    <ul class="nav navbar-nav">
+                        <li><a asp-area="" asp-controller="Home" asp-action="Index" class="btn btn-danger">Home</a></li>
+                        <li><a asp-area="" asp-controller="Home" asp-action="About">About</a></li>
+                        <li><a asp-area="" asp-controller="Home" asp-action="Contact">Contact</a></li>
+                        <li><a asp-area="" asp-controller="Home" asp-action="Shop">Shop</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        -->
     <div class="container body-content">
         @RenderBody()
         <hr />
@@ -46,7 +55,7 @@
             <p>&copy; 2018 - VigorousSip</p>
         </footer>
     </div>
-
+    -
     <environment include="Development">
         <script src="~/lib/jquery/dist/jquery.js"></script>
         <script src="~/lib/bootstrap/dist/js/bootstrap.js"></script>
@@ -70,4 +79,4 @@
 
     @RenderSection("Scripts", required: false)
 </body>
-</html>
+    </html>
